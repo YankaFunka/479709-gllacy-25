@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Яна Безуглова](https://up.htmlacademy.ru/htmlcss/25/user/479709).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Ефимов](https://htmlacademy.ru/profile/efiand).
 
 ---
 
