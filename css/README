@@ -7,3 +7,64 @@
 css/
 | - style.css
 | - [другие *.css файлы]
+.gllacy {
+  width: 154px;
+  height: 64px;
+  object-fit: contain;
+}
+search{
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
+}
+
+exit{
+  width: 21px;
+  height: 19px;
+  object-fit: contain;
+}
+basket{
+  width: 21px;
+  height: 20px;
+  object-fit: contain;
+}
+1234{
+  width: 49px;
+  height: 49px;
+  object-fit: contain;
+}
+straw{
+  width: 560px;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 15px;
+}
+border{
+  width: 560px;
+  height: 220px;
+  object-fit: contain;
+}
+1234  {width: 32px;
+  height: 32px;
+  object-fit: contain;
+  opacity: 0.8;}
+ heart{
+  width: 15px;
+  height: 13px;
+  object-fit: contain;
+}
+.logo-htmlacademy-small {
+  width: 108px;
+  height: 39px;
+  object-fit: contain;
+}
+1-12{
+  width: 267px;
+  height: 267px;
+  object-fit: contain;
+}
+red-basket {
+  width: 21px;
+  height: 20px;
+  object-fit: contain;
+}
