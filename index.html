@@ -5,12 +5,11 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
+  <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/logo.svg" width="154" height="64" alt="Логотип Глэйси»">
@@ -33,7 +32,7 @@
           <form class="window-appear" action="https://echo.htmlacademy.ru" method="post">
             <p>
               <label class="visually-hidden" for="user-search">Форма для поиска</label>
-              <input class="search-icon-user" id="user-search" type="search" name="search" placeholder="Что ищем?">
+              <input class="form" id="user-search" type="search" name="search" placeholder="Что ищем?">
             </p>
           </form>
         </li>
@@ -41,11 +40,11 @@
           <form class="window-appear" action="https://echo.htmlacademy.ru" method="post">
             <p>
               <label class="visually-hidden" for="user-login">Логин</label>
-              <input class="login-icon-user" id="user-login" type="email" name="login" placeholder="Электронная почта">
+              <input class="form" id="user-login" type="email" name="login" placeholder="Электронная почта">
             </p>
             <p>
               <label class="visually-hidden" for="user-password">Пароль</label>
-              <input class="login-icon-password" id="user-password" type="password" name="password"
+              <input class="form" id="user-password" type="password" name="password"
                 placeholder="Пароль">
             </p>
             <p>
@@ -70,11 +69,11 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="visually-hidden" for="user-name">Имя</label>
-          <input class="feedback-icon-user" id="user-name" type="text" name="name" placeholder="Как вас зовут?">
+          <input class="form" id="user-name" type="text" name="name" placeholder="Как вас зовут?">
         </p>
         <p>
           <label class="visually-hidden" for="user-mail">Электронная почта</label>
-          <input class="feedback-icon-mail" id="user-mail" type="email" name="mail"
+          <input class="form" id="user-mail" type="email" name="mail"
             placeholder="Ваша почта для ответа?">
         </p>
         <p>
@@ -121,7 +120,7 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
         <label class="visually-hidden" for="user-subscribe">Подписка</label>
-        <input class="subscribe-icon-user" id="user-subscribe" type="email" name="subscribe"
+        <input class="form" id="user-subscribe" type="email" name="subscribe"
           placeholder="Электронная почта">
         </p>
         <button class="button" type="submit">
