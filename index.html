@@ -10,20 +10,20 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header>
     <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/logo.svg" width="154" height="64" alt="Логотип Глэйси»">
       </a>
       <ul class="site-navigation">
-        <li><a class="catalog-form" href="catalog.html">Каталог</a>
-          <ul class="window-appear">
-            <li><a class="bold catalog-list" href="#">Новинки</a></li>
-            <li><a class="catalog-list" href="#">Сливочное</a></li>
-            <li><a class="catalog-list" href="#">Щербеты</a></li>
-            <li><a class="catalog-list" href="#">Фруктовый лед</a></li>
-            <li><a class="catalog-list" href="#">Мелорин</a></li>
-          </ul>
+        <li><a class="options-form" href="catalog.html">Каталог</a>
+            <ul class="options window-appear">
+              <li><a class="options-list new" href="#">Новинки</a></li>
+              <li><a class="options-list" href="#">Сливочное</a></li>
+              <li><a class="options-list" href="#">Щербеты</a></li>
+              <li><a class="options-list" href="#">Фруктовый лед</a></li>
+              <li><a class="options-list" href="#">Мелорин</a></li>
+            </ul>
         </li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
@@ -33,7 +33,7 @@
           <form class="window-appear" action="https://echo.htmlacademy.ru" method="post">
             <p>
               <label class="visually-hidden" for="user-search">Форма для поиска</label>
-              <input class="form" id="user-search" type="search" name="search" placeholder="Что ищем?">
+              <input class="input" id="user-search" type="search" name="search" placeholder="Что ищем?">
             </p>
           </form>
         </li>
@@ -41,12 +41,11 @@
           <form class="window-appear" action="https://echo.htmlacademy.ru" method="post">
             <p>
               <label class="visually-hidden" for="user-login">Логин</label>
-              <input class="form" id="user-login" type="email" name="login" placeholder="Электронная почта">
+              <input class="input" id="user-login" type="email" name="login" placeholder="Электронная почта">
             </p>
             <p>
               <label class="visually-hidden" for="user-password">Пароль</label>
-              <input class="form" id="user-password" type="password" name="password"
-                placeholder="Пароль">
+              <input class="input" id="user-password" type="password" name="password" placeholder="Пароль">
             </p>
             <button class="button" type="submit">
               Войти
@@ -70,16 +69,15 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="visually-hidden" for="user-name">Имя</label>
-          <input class="form" id="user-name" type="text" name="name" placeholder="Как вас зовут?">
+          <input class="input" id="user-name" type="text" name="name" placeholder="Как вас зовут?">
         </p>
         <p>
           <label class="visually-hidden" for="user-mail">Электронная почта</label>
-          <input class="form" id="user-mail" type="email" name="mail"
-            placeholder="Ваша почта для ответа?">
+          <input class="input" id="user-mail" type="email" name="mail" placeholder="Ваша почта для ответа?">
         </p>
         <p>
           <label class="visually-hidden" for="feedback-write">Отзыв</label>
-          <textarea id="feedback-write" name="write" placeholder="Напишите что-нибудь..."></textarea>
+          <textarea class="input" id="feedback-write" name="write" placeholder="Напишите что-нибудь..."></textarea>
         </p>
         <button class="button" type="submit">
           Отправить
@@ -90,7 +88,8 @@
     <section class="features">
       <h1 class="visually-hidden">Глэйси</h1>
       <h2 class="visually-hidden">Преимущества</h2>
-      <p class="bold">Магазин Глэйси - это онлайн и офлайн - магазин по продаже мороженного собственного производства на развес</p>
+      <p class="bold">Магазин Глэйси - это онлайн и офлайн - магазин по продаже мороженного собственного производства на
+        развес</p>
       <ul class="features-list">
         <li class="features-item">
           <p>Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования
@@ -111,7 +110,7 @@
       </ul>
     </section>
     <section class="news">
-      <h2 class="bold">Новое в нашем блоге</h2>
+      <h2>Новое в нашем блоге</h2>
       <a class="bold" href="#">10 Способов сервировки фруктовых щербетов к столу</a>
     </section>
     <section class="subscription">
@@ -120,9 +119,8 @@
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-        <label class="visually-hidden" for="user-subscribe">Подписка</label>
-        <input class="form" id="user-subscribe" type="email" name="subscribe"
-          placeholder="Электронная почта">
+          <label class="visually-hidden" for="user-subscribe">Подписка</label>
+          <input class="input" id="user-subscribe" type="email" name="subscribe" placeholder="Электронная почта">
         </p>
         <button class="button" type="submit">
           Отправить
