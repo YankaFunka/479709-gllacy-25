@@ -3,10 +3,8 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
-  font-weight: normal;
   color: #ffffff;
-  background-color: #849d8f;
-  text-align: left;
+  background-color: #849d8f
 }
 
 .visually-hidden {
@@ -103,7 +101,7 @@ a:active {
   font-weight: bold;
 }
 
-.catalog-item-title a {
+a .catalog-item-title {
   text-align: center;
 }
 
@@ -177,6 +175,11 @@ a:active {
   border-radius: 15px;
   background-repeat: no-repeat;
   color: #323232;
+}
+
+.news a {
+text-decoration: underline;
+border-bottom: 0 solid rgba(255, 255, 255, 0.2)
 }
 
 .subscription {
