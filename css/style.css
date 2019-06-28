@@ -7,17 +7,13 @@ body {
   background-color: #849d8f
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-}
-
 a {
   color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus {
   color: #ffbc9e;
 }
 
@@ -25,15 +21,21 @@ a:active {
   color: #ffbc9e;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
 .button {
   font: inherit;
   font-weight: bold;
   text-align: center;
   color: #ffffff;
-  vertical-align: middle;
+  vertical-align: top;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   background-image: linear-gradient(#e74a35, #f26843);
   border-radius: 10px;
+  border: none;
 }
 
 .button:hover,
@@ -52,7 +54,8 @@ a:active {
   line-height: 24px;
   border: solid 2px rgba(154, 154, 154, 0.52);
   border-radius: 5px;
-  padding: 15px;
+  padding: 10px;
+  width: 100%;
 }
 
 .input:hover,
@@ -61,15 +64,17 @@ a:active {
 }
 
 .input::placeholder {
-  line-height: 24px;
   color: #999999;
-  background-color: #ffffff;
+  font-weight: bold;
 }
 
 .window-appear {
   display: block;
   color: #323232;
   background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  padding: 20px 15px;
 }
 
 .main-header .working-clock {
@@ -95,19 +100,6 @@ a:active {
 .basket {
   display: block;
   width: 539px;
-  border-radius: 5px;
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
-  padding: 20px;
-}
-
-.basket a {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: normal;
-  color: #fefefe;
-  width: 170px;
-  box-shadow: 0 1px 2px 0 #ac1000;
-  background-image: linear-gradient( #e74a35, #f26843);
 }
 
 .table {
@@ -134,8 +126,30 @@ a:active {
   list-style: none;
 }
 
+.catalog-item {
+  width: 293px;
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+  color: #ffffff;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #9bb1a3;
+  border-radius: 5px;
+}
+
+.catalog-item .button {
+  margin: 20px auto;
+  display: none;
+}
+
+.catalog-item .button:hover,
+.catalog-item .button:focus-within {
+  display: table;
+}
+
 .catalog-item-image {
-  text-align:center;
+  text-align: center;
 }
 
 .catalog-item-price {
@@ -144,44 +158,27 @@ a:active {
   font-weight: bold;
 }
 
-.catalog-item-title a {
+.catalog-item-title {
   text-align: center;
-}
-
-.product-choose {
-  width: 293px;
-}
-
-.product-choose:hover,
-.product-choose:focus {
-  color: #ffffff;
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-  background-color: #9bb1a3;
-  border-radius: 5px;
-}
-
-.main-navigation a {
-  font-weight: bold;
 }
 
 .main-navigation li {
   list-style: none;
 }
 
-.site-navigation a {
+.site-item>a {
   line-height: 18px;
+  font-weight: bold;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
-  color: #333333;
-  text-decoration: none;
-  width: 87px;
+.site-item>a:hover,
+.site-item>a:focus {
+  color: #323232;
   background-color: #f7f6f3;
   border-radius: 10px;
 }
 
-.site-navigation a:active {
+.site-item>a:active {
   box-shadow: inset 0 2px 1px 0 #696969;
   background-color: #ededed;
 }
@@ -189,22 +186,19 @@ a:active {
 .options {
   display: block;
   width: 143px;
-  box-shadow: 0 3px 6px -2px #333333;
-  border-radius: 5px;
-  padding: 0;
 }
 
 .options-item a {
   display: block;
-  font-weight: normal;
-  text-decoration: none;
-  padding: 20px 17px;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 5px;
 }
 
 .options-item a:hover,
 .options-item a:focus {
   background-color: #fbded7;
-
+  color: #323232;
 }
 
 .options-item a:active {
@@ -226,17 +220,17 @@ a:active {
   background: #a3b6ac;
 }
 
-.user-navigation a {
+.user-item>a {
   line-height: 16px;
   width: 93px;
-  text-decoration: none;
+  font-weight: bold;
   background-color: #a3b6ac;
   border-radius: 5px;
   text-align: right;
 }
 
-.user-navigation a:hover,
-.user-navigation a:focus {
+.user-item>a:hover,
+.user-item>a:focus {
   color: #323232;
   background-color: #f8f7f4;
 }
@@ -244,32 +238,17 @@ a:active {
 .search {
   display: block;
   width: 341px;
-  border-radius: 5px;
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
-  padding: 15px 20px;
-}
-
-.input[type=search] {
-  width: 311px;
 }
 
 .exit {
   display: block;
   width: 277px;
-  border-radius: 5px;
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
-  padding: 18px 21px;
 }
 
 .exit a {
   font-size: 13px;
   line-height: 14px;
-  font-weight: normal;
   background-color: #f8f7f4;
-}
-
-.exit .input {
-  width: 241px;
 }
 
 .feedback {
@@ -281,11 +260,6 @@ a:active {
 
 .feedback .input {
   width: 267px;
-}
-
-.feedback .textarea {
-  width: 428px;
-  height: 155px;
 }
 
 .lead-text {
@@ -346,4 +320,3 @@ a:active {
   line-height: 18px;
   color: #fefefe;
 }
-
