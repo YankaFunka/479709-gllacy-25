@@ -10,35 +10,35 @@
 </head>
 
 <body>
-  <header>
+  <header class="main-header wrapper">
     <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/logo.svg" width="154" height="64" alt="Логотип Глэйси»">
       </a>
       <ul class="site-navigation">
         <li class="site-item"><a class="options-form" href="catalog.html">Каталог</a>
-          <ul class="options window-appear">
+          <!-- <ul class="options window-appear">
             <li class="options-item"><a class="new" href="#">Новинки</a></li>
             <li class="options-item"><a href="#">Сливочное</a></li>
             <li class="options-item"><a href="#">Щербеты</a></li>
             <li class="options-item"><a href="#">Фруктовый лед</a></li>
             <li class="options-item"><a href="#">Мелорин</a></li>
-          </ul>
+          </ul> -->
         </li>
         <li class="site-item"><a href="#">Доставка и оплата</a></li>
         <li class="site-item"><a href="#">О компании</a></li>
       </ul>
       <ul class="user-navigation">
         <li class="user-item"><a class="search-form" href="#">Поиск</a>
-          <form class="window-appear search" action="https://echo.htmlacademy.ru" method="post">
+          <!--<form class="window-appear search" action="https://echo.htmlacademy.ru" method="post">
             <p>
               <label class="visually-hidden" for="user-search">Форма для поиска</label>
               <input class="input" id="user-search" type="search" name="search" placeholder="Что ищем?">
             </p>
-          </form>
+          </form>-->
         </li>
         <li class="user-item"><a class="login-form" href="#">Вход</a>
-          <form class="window-appear exit" action="https://echo.htmlacademy.ru" method="post">
+          <!-- <form class="window-appear exit" action="https://echo.htmlacademy.ru" method="post">
             <p>
               <label class="visually-hidden" for="user-login">Логин</label>
               <input class="input" id="user-login" type="email" name="login" placeholder="Электронная почта">
@@ -56,14 +56,16 @@
             <p>
               <a class="exit-item" href="#">Новая регистрация</a>
             </p>
-          </form>
+          </form>-->
         </li>
         <li class="user-item"><a class="basket-form" href="#">Пусто</a></li>
       </ul>
     </nav>
+    <p class="working-clock">10 до 20, ежедневно<br></p>
+    <p class="number">8 812 450 25 25</p>
   </header>
-  <main class="container">
-    <section class="window-appear feedback">
+  <main class="wrapper">
+    <!--<section class="window-appear feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
       <p>Мы обязательно вам ответим!</p>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
@@ -84,10 +86,76 @@
           Отправить
         </button>
       </form>
+    </section>-->
+    <section class="image-title">
+      <h1 class="visually-hidden">Глейси</h1>
+      <h2 class="image-title-item">Крем-брюле и пломбир с малиновым джемом</h2>
+      <img src="img/bg-ice-cream.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
+      <a class="button" href="#">Давайте оба!</a>
     </section>
-    <!-- тут будут красные блоки -->
+    <secion class="stock">
+      <h2 class="visually-hidden">Акции</h2>
+      <div class="container">
+        <div class="raspberry">
+          <h3 class="stock-list">Малинка даром!</h3>
+          <p class="stock-item">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового
+            варенья бесплатно.</p>
+        </div>
+        <div class="chocolate">
+          <h3 class="stock-list">Шоколадки даром!</h3>
+          <p class="stock-item">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки
+            совершенно бесплатно.</p>
+        </div>
+      </div>
+    </secion>
+    <section class="catalog">
+      <h2 class="visually-hidden">Список товаров</h2>
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <p class="catalog-item-image">
+            <img src="img/product-1.png" width="267" height="267"
+              alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+          </p>
+          <p class="catalog-item-price">310₽/кг</p>
+          <h3 class="catalog-item-title">
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          </h3>
+          <a class="button" href="#">Быстрый просмотр</a>
+        </li>
+        <li class="catalog-item">
+          <p class="catalog-item-image">
+            <img src="img/product-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+          </p>
+          <p class="catalog-item-price">380₽/кг</p>
+          <h3 class="catalog-item-title">
+            <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+          </h3>
+          <a class="button" href="#">Быстрый просмотр</a>
+        </li>
+        <li class="catalog-item">
+          <p class="catalog-item-image">
+            <img src="img/product-3.png" width="267" height="267"
+              alt="Сливочно-клубничное с присыпкой из белого шоколада">
+          </p>
+          <p class="catalog-item-price">355₽/кг</p>
+          <h3 class="catalog-item-title">
+            <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          </h3>
+          <a class="button" href="#">Быстрый просмотр</a>
+        </li>
+        <li class="catalog-item">
+          <p class="catalog-item-image">
+            <img src="img/product-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+          </p>
+          <p class="catalog-item-price">415₽/кг</p>
+          <h3 class="catalog-item-title">
+            <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          </h3>
+          <a class="button" href="#">Быстрый просмотр</a>
+        </li>
+      </ul>
+    </section>
     <section class="features">
-      <h1 class="visually-hidden">Глэйси</h1>
       <h2 class="visually-hidden">Преимущества</h2>
       <p class="lead-text">Магазин Глэйси - это онлайн и офлайн - магазин по продаже мороженного собственного
         производства на
@@ -111,44 +179,70 @@
         </li>
       </ul>
     </section>
-    <section class="news">
-      <h2>Новое в нашем блоге</h2>
-      <a class="lead-text" href="#">10 Способов сервировки фруктовых щербетов к столу</a>
-    </section>
-    <section class="subscription">
-      <h2 class="visually-hidden">Подписка</h2>
-      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-        Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visually-hidden" for="user-subscribe">Подписка</label>
-          <input class="input" id="user-subscribe" type="email" name="subscribe" placeholder="Электронная почта">
-        </p>
-        <button class="button" type="submit">
-          Отправить
-        </button>
-      </form>
-    </section>
+    <div class="container">
+      <section class="news">
+        <h2>Новое в нашем блоге</h2>
+        <a class="lead-text" href="#">10 Способов сервировки фруктовых щербетов к столу</a>
+      </section>
+      <section class="subscription">
+        <h2 class="visually-hidden">Подписка</h2>
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="user-subscribe">Подписка</label>
+            <input class="input" id="user-subscribe" type="email" name="subscribe" placeholder="Электронная почта">
+          </p>
+          <button class="button" type="submit">
+            Отправить
+          </button>
+        </form>
+      </section>
+    </div>
     <!-- тут будут красные блоки -->
   </main>
-  <footer>
-    <ul class="footer-social">
-      <li><a class="social-button" href="#">Твиттер</a></li>
-      <li><a class="social-button" href="#">Инстаграм</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">Вконтакте</a></li>
-    </ul>
-    <ul class="info-list">
-      <li class="info-item"><a href="#">Для поставщиков</a></li>
-      <li class="info-item"><a href="#">О производстве</a></li>
-      <li class="info-item"><a href="#">Наши документы</a></li>
-      <li class="info-item"><a href="#">Экологические стандарты</a></li>
-    </ul>
-    <p class="footer-copyright">
-      Сделано в
-      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-      © 2019
-    </p>
+  <footer class="main-footer">
+    <div class="wrapper">
+      <ul class="footer-social">
+        <li>
+          <img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
+          <a class="visually-hidden" href="#">Твиттер</a>
+        </li>
+        <li>
+          <img src="img/instagram.svg" width="32" height="32" alt="Инстаграм">
+          <a class="visually-hidden" href="#">Инстаграм</a>
+        </li>
+        <li>
+          <img src="img/fb.svg" width="32" height="32" alt="Фейсбук">
+          <a class="visually-hidden" href="#">Фейсбук</a>
+        </li>
+        <li>
+          <img src="img/vk.svg" width="32" height="32" alt="Вконтакте">
+          <a class="visually-hidden" href="#">Вконтакте</a>
+        </li>
+      </ul>
+      <ul class="info-list">
+        <li class="info-item">
+          <img src="img/heart.svg" width="15" height="13" alt="Сердце">
+          <a class="column-1" href="#">Для поставщиков</a>
+        </li>
+        <li class="info-item">
+          <a class="column-1" href="#">О производстве</a>
+        </li>
+        <li class="info-item">
+          <a class="column-2" href="#">Наши документы</a>
+        </li>
+        <li class="info-item">
+          <a class="column-2" href="#">Экологические стандарты</a>
+        </li>
+      </ul>
+      <p class="footer-copyright">
+        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy"> <br>
+        Сделано в
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        © 2019
+      </p>
+    </div>
   </footer>
 </body>
 

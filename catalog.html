@@ -10,7 +10,7 @@
 </head>
 
 <body class="inner-page">
-  <header class="main-header">
+  <header class="main-header wrapper">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
         <img src="img/logo.svg" width="154" height="64" alt="Логотип Глэйси»">
@@ -24,6 +24,7 @@
         <li class="user-item"><a class="search-form" href="#">Поиск</a></li>
         <li class="user-item"><a class="login-form" href="#">Вход</a></li>
         <li class="user-item"><a class="basket-form" href="#">2 товара</a>
+          <!---
           <div class="window-appear basket">
             <table class="table">
               <tr>
@@ -65,18 +66,21 @@
             <p>Итого: 750 руб.</p>
             <p><a class="button" href="#">Оформить заказ</a></p>
           </div>
+          -->
         </li>
       </ul>
     </nav>
     <p class="working-clock">10 до 20, ежедневно<br></p>
     <p class="number">8 812 450 25 25</p>
   </header>
-  <main class="container">
-    <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li class="navigation-current">Сливочное</li>
-    </ul>
+  <main class="wrapper">
+    <div class="lead-container">
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a><code> » </code></li>
+        <li><a href="catalog.html">Каталог</a><code> » </code></li>
+        <li class="navigation-current">Сливочное</li>
+      </ul>
+    </div>
     <!-- тут будут красные блоки -->
     <section class="catalog">
       <h1 class="page-title">Cливочное мороженное</h1>
@@ -218,24 +222,38 @@
   </section>
   -->
   </main>
-  <footer>
-    <ul class="footer-social">
-      <li><a class="social-button" href="#">Твиттер</a></li>
-      <li><a class="social-button" href="#">Инстаграм</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">Вконтакте</a></li>
-    </ul>
-    <ul class="info-list">
-      <li class="info-item"><a href="#">Для поставщиков</a></li>
-      <li class="info-item"><a href="#">О производстве</a></li>
-      <li class="info-item"><a href="#">Наши документы</a></li>
-      <li class="info-item"><a href="#">Экологические стандарты</a></li>
-    </ul>
-    <p class="footer-copyright">
-      Сделано в
-      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-      © 2019
-    </p>
+  <footer class="main-footer">
+    <div class="wrapper">
+      <ul class="footer-social">
+        <li>
+          <img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
+          <a class="visually-hidden" href="#">Твиттер</a>
+        </li>
+        <li>
+          <img src="img/instagram.svg" width="32" height="32" alt="Инстаграм">
+          <a class="visually-hidden" href="#">Инстаграм</a>
+        </li>
+        <li>
+          <img src="img/fb.svg" width="32" height="32" alt="Фейсбук">
+          <a class="visually-hidden" href="#">Фейсбук</a>
+        </li>
+        <li>
+          <img src="img/vk.svg" width="32" height="32" alt="Вконтакте">
+          <a class="visually-hidden" href="#">Вконтакте</a>
+        </li>
+      </ul>
+      <ul class="info-list">
+        <li class="info-item"><a href="#">Для поставщиков</a></li>
+        <li class="info-item"><a href="#">О производстве</a></li>
+        <li class="info-item"><a href="#">Наши документы</a></li>
+        <li class="info-item"><a href="#">Экологические стандарты</a></li>
+      </ul>
+      <p class="footer-copyright">
+        Сделано в
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        © 2019
+      </p>
+    </div>
   </footer>
 
 </body>
